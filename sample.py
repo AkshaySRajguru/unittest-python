@@ -10,9 +10,9 @@ def verifyFizzBuzz(num):
     else:
         return num
 
-def main():
+def main(): # pragma: no cover
     for i in range(1, 17):
         print(verifyFizzBuzz(i), end=' ')
         
-if __name__ == '__main__':
+if __name__ == '__main__': # pragma: no cover
     main()

@@ -1,4 +1,6 @@
 import unittest
+from unittest.mock import patch
+
 from sample import verifyFizzBuzz
 
 class TestSample(unittest.TestCase):
@@ -13,3 +15,12 @@ class TestSample(unittest.TestCase):
     def testFizzBuzz(self):
         for i in [15, 30, 90]:
             self.assertEqual(verifyFizzBuzz(i), 'fizzbuzz')
+    
+    def testNumber(self):
+        for i in [1, 2, 4]:
+            self.assertEqual(verifyFizzBuzz(i), i)
+    
+    @patch('sample.main')    
+    def testMain(self, mockedMain):
+        mockedMain()
+        mockedMain.assert_called_once()
