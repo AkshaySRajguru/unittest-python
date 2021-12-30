@@ -1,6 +1,7 @@
 # unittest-python
 ## installation:
 pip install pytest
+
 pip install pytest-cov 
 
 # Note: Rename test files as 'test_<filename>' in order to run below commands.
@@ -15,3 +16,4 @@ pytest --cov=sample
 
 ### to check lines of code that were not 
 pytest --cov=sample --cov-report=term-missing
+![image](https://user-images.githubusercontent.com/46608433/147778687-3a9797db-a3cd-4a0f-9637-7087960350d1.png)
