@@ -24,3 +24,10 @@ after adding 'testNumber':
 The code coverage analysis can also be configured to treat lines with conditionals as needing double coverage to account for the two possible outcomes. 
 This is called branch coverage and is enabled with the --cov-branch option:
 ![image](https://user-images.githubusercontent.com/46608433/147780090-efa38a67-dc90-422c-a0d4-39ab53b8b38b.png)
+
+After adding # pragma: no cover:
+![image](https://user-images.githubusercontent.com/46608433/147781100-0667a1b9-f0e1-43f3-b1ca-81791e484600.png)
+
+### References:
+ https://blog.miguelgrinberg.com/post/how-to-write-unit-tests-in-python-part-1-fizz-buzz
+ https://breadcrumbscollector.tech/how-to-use-code-coverage-in-python-with-pytest/
