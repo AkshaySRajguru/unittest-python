@@ -21,3 +21,6 @@ pytest --cov=sample --cov-report=term-missing
 after adding 'testNumber':
 ![image](https://user-images.githubusercontent.com/46608433/147779673-91954224-eee9-4927-8ec4-1b64f5ee6cd8.png)
 
+The code coverage analysis can also be configured to treat lines with conditionals as needing double coverage to account for the two possible outcomes. 
+This is called branch coverage and is enabled with the --cov-branch option:
+![image](https://user-images.githubusercontent.com/46608433/147780090-efa38a67-dc90-422c-a0d4-39ab53b8b38b.png)
